@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: uihtkq6lv-nodejs-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/uihtkq6lv-nodejs

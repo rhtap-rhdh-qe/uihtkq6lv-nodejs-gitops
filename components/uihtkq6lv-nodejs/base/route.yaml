@@ -1,0 +1,18 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: uihtkq6lv-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: uihtkq6lv-nodejs 
+  name: uihtkq6lv-nodejs
+spec:
+  port:
+    targetPort: 3001 
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: uihtkq6lv-nodejs
+    weight: 100 
